@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Navbar, Nav, NavDropdown, Container, Form, Button } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Container,
+  Form,
+  Button
+} from "react-bootstrap";
 import Modal from "react-responsive-modal";
 import SideNav from "./SideNav";
 
@@ -19,32 +26,37 @@ const TopNavBar2 = () => {
       className="p-0 second_nav_bar"
     >
       <Modal open={openedModal} onClose={() => updateOpenedModal(false)}>
-        <div className='pl-5 pr-5'>
-          <br/>
+        <div className="pl-5 pr-5">
+          <br />
           <p></p>
-          <p className= 'float-left'><b>Sign in to continue</b></p>
-          <p className= 'float-right'> Not a member yet? <span>Register now</span></p>
-        </div>
-        <Form>
-  <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
-    <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
-    </Form.Text>
-  </Form.Group>
+          <p className="float-left">
+            <b>Sign in to continue</b>
+          </p>
+          <p className="float-right">
+            {" "}
+            Not a member yet? <span>Register now</span>
+          </p>
+          <Form>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+              </Form.Text>
+            </Form.Group>
 
-  <Form.Group controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
-  </Form.Group>
-  <Form.Group controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
-  </Form.Group>
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-</Form>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control type="password" placeholder="Password" />
+            </Form.Group>
+            <Form.Group controlId="formBasicCheckbox">
+              <Form.Check type="checkbox" label="Check me out" />
+            </Form.Group>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </div>
       </Modal>
 
       <Navbar.Brand
