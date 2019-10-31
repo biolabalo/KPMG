@@ -1,13 +1,78 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.link-1 {
+  display: inline-block;
+  color: #202121 !important;
+  border-bottom: 1px solid rgba(32,33,33,0.5);
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.slogan{
+  color: #202121 !important;
+}
+
+
+
+@media screen and (max-width: 1025px) {
+  .navbar-expand{
+    display: none !important;
+  }
+}
+
+
+.second_nav_bar{
+  height: 70px;
+  background: white !important;
+  border-top: 1px solid #E6EAEA;
+}
+
+.sub{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.imageSection{
+  height: 400px;
+  width:100%;
+  background-size: cover;
+  background-image: url('https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2019/10/spatzekstudio-web-sites.jpg');
+
+}
+
+.cardSection{
+
+  width: 1905px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 66px;
+  padding-right: 66px;
+}
+
+.box-heading{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+.firstCards .card{
+  margin-right: 20px;
+  border-left: 1px solid rgba(0,0,0,.125);
 }
