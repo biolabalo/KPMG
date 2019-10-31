@@ -25,7 +25,8 @@ const ImageSection = () => {
         </div>
       </div>
 
-      <div  className="firstCards">
+
+<div  className="firstCards mt-5">
         <CardGroup>
           <Card>
             <Card.Img
@@ -98,21 +99,11 @@ const ImageSection = () => {
             <Card.Footer>
               <small className="text-muted">
                 BY IMMERSIVE GARDEN
-                <Badge pill variant="primary ml-2 mr-2">
-                  HM
-                </Badge>
-                <Badge pill  variant="info mr-2">
-                DEV
-                </Badge>
-                <Badge pill variant="danger">
-                  SOTD
-                </Badge>
               </small>
             </Card.Footer>
           </Card>
         </CardGroup>
       </div>
-
 
 
 

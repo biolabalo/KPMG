@@ -82,7 +82,8 @@ const TopNavBar2 = () => {
               backgroundColor: "white",
               color: "#202121",
               fontSize: "14px",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              textAlign: 'center',
             }}
             onClick={() => updateOpenedModal(true)}
           >
@@ -97,7 +98,8 @@ const TopNavBar2 = () => {
               paddingBottom: "20px",
               backgroundColor: "#49c5b6",
               color: "#fff",
-              fontSize: "14px"
+              fontSize: "14px",
+              textAlign: 'center',
             }}
           >
             SUBMIT YOUR SITE
