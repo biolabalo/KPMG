@@ -16,9 +16,11 @@ const  update = () => {
 return ( 
 <Navbar collapseOnSelect expand="lg"  variant="light" className='p-0 second_nav_bar'>
 
-<Navbar.Brand href="#home"
+<Navbar.Brand
+className='ml-5'
+style={{cursor:'pointer'}}
 onClick={update}>
-React-Bootstrap
+MENU
 </Navbar.Brand>
 
 < SideNav  widthLength={opened} toggle={update}/>
