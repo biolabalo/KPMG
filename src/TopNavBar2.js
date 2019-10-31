@@ -1,18 +1,27 @@
 import React, { useState } from 'react';
 import { Navbar , Nav , NavDropdown, Container }  from  'react-bootstrap'
+import  SideNav from  './SideNav';
+
+
 
 const TopNavBar2 = () => {
 
-const [sidebarOpen , updateSidebarOpen] = useState(false)
+const [opened , updateWidth] = useState(true)
+ 
+const  update = () => {
+  opened ? updateWidth(false) : updateWidth(true);
+};
+
 
 return ( 
 <Navbar collapseOnSelect expand="lg"  variant="light" className='p-0 second_nav_bar'>
 
 <Navbar.Brand href="#home"
->
+onClick={update}>
 React-Bootstrap
 </Navbar.Brand>
 
+< SideNav  widthLength={opened} toggle={update}/>
 
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav" style={{height: '100%'}}>
